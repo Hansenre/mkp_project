@@ -1,0 +1,441 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Goldman&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+:root{
+    --blackColor: #000;
+    --whiteColor:#fff;
+    --yellowColor: #ffe600;
+    --ligthBlueColor: rgb(132, 132, 247);
+    --blueColor: blue;
+    --grayColor: #B0A9A9;
+    --lightGrayColor:#DCDCDC;
+    --darkColor: #343232;
+    --shadowDarkColor: rgba(0, 0, 0, 0.25);
+}
+
+body{
+    font-family: 'Goldman';
+    background-color: var(--yellowColor);
+}
+
+header {
+    width: 75vw;
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--yellowColor);
+    box-shadow: 0px 4px 4px var(--shadowDarkColor);
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+header #icon-header{
+    width: 6vw;
+    height: 10vh;
+    margin: 15px;
+}
+
+header .search-container form{
+    display: flex;
+}
+
+header #search-field {
+    width: 30vw;
+    height: 4vh;
+    padding-left: 3vw;
+    background-color: var(--whiteColor);
+    border-radius: 40px;
+    border: 1px solid var(--shadowDarkColor);
+    transition: 0.5s;
+    font-size: 1em;
+    display: flex;
+    flex-direction: row;
+}
+
+header #search-field:hover {
+    background-color: var(--lightGrayColor);
+    border: 1px solid var(--blueColor);
+    transition: 0.5s;
+}
+
+header #search-btn i{
+    font-size: 1.5em;
+    color: var(--grayColor);
+    cursor: pointer;
+}
+
+header #search-btn i:hover{
+    color: var(--blueColor);
+    transition: 0.5s;
+}
+
+header #search-btn{
+    border: none;
+    border-radius: 50%;
+    background-color: transparent;
+    position: relative;
+    left: 38px;
+}
+
+header .user-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header .user-container #icon-user {
+    width: 3.5vw;
+    height: 6vh;
+}
+
+header .user-container .menu-user ul {
+    list-style-type: none;
+}
+
+header .user-container .menu-user ul li{
+    display: inline;
+    font-weight: bold;
+}
+
+header .user-container .menu-user ul li a {
+    color: var(--darkColor);
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px;
+    transition: 0.8s;
+}
+
+header .user-container .menu-user ul li a:hover {
+    color:var(--blueColor);
+    text-decoration: underline var(--blueColor);
+    transition: 0.8s;
+}
+
+
+
+
+
+
+
+
+
+
+
+ul#cadastro li {
+    list-style-type: none;
+
+}
+
+ul#cadastro li a {
+    text-decoration: none;
+    color: #343232;
+}
+
+#cadastro {
+    background-color: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-family: 'Goldman';
+    font-weight: bold;
+}
+
+.criar-conta {
+    display: flex;
+    align-items: center;
+}
+
+
+ul.drop-submenu li a {
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+
+}
+
+.barralink {
+    display: flex;
+    justify-items: center;
+}
+
+
+
+
+.barralink {
+    margin: auto;
+    width: 1440px;
+    height: 50px;
+    background-color: #BFB802;
+    font-family: 'Goldman';
+    font-size: 14px;
+}
+
+.navbar {
+    font-style: 'Goldman';
+    font-weight: 700;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+    padding-left: 140px;
+
+}
+
+.navbar-item7 {
+    gap: 2px;
+}
+
+
+.navbar a {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    text-decoration: none;
+    color: #343232;
+}
+
+.navbar a img {
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+#hamburguer a {
+    text-decoration: none;
+    
+}
+
+#hamburguer {
+    position: relative;
+
+}
+
+#hamburguer span {
+    margin-left: 82px;
+    color: #343232;
+    font-weight: bold;
+    position: absolute;
+    margin-top: 18px;
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.submenu-hamb {
+    right: -170px;
+    position: absolute;
+    transition: .3s;
+    /* efeito feito no position absolute feito no input checkbox transform: translateX*/
+    top: 50px;
+    z-index: 9;
+    opacity: 0;
+}
+
+input[type="checkbox"]:checked~.submenu-hamb {
+  /*   transform: translateX(-170px);  TEMOS QUE AJUSTAR ESSE COMANDO PARA FICAR LEGAL */
+    opacity: 1;/* LISTA DESAPARECE QUANDO CLICA OUTRA VEZ NO HAMBURGUINHO */
+    /* propriedade mexe no eixo X (horizontal), fazendo o submenu-hamb aparecer*/
+}
+
+.submenu-hamb ul{
+    list-style: none;
+}
+
+.submenu-hamb a {
+    display: block;
+    padding: 10px 20px;
+    color: rgb(255, 219, 16);
+    background-color: rgb(14, 14, 102);
+}
+
+.submenu-hamb a:hover {
+    background-color: #f1ea13;
+    color: rgb(15, 15, 161);
+}
+
+#hamburguer label {
+    padding: 10px;
+    position: absolute;
+    margin-left: 40px;    
+}
+
+.drop-submenu li {
+    list-style-type: none;
+}
+
+
+
+
+/*Cor de fundo do footer*/
+footer {
+    margin: 10px auto;
+    max-width: 1440px;
+    background: #111;
+    color: #d9d9d9;
+}
+
+.main-content {
+    display: flex;
+}
+
+.main-content .box {
+    flex-basis: 50%;
+    padding: 10px 20px;
+}
+
+.box h2 {
+    font-size: 15px;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+.left .content {
+    margin: 10px 0 0 0;
+}
+
+.left .content .social {
+    margin: 10px 0 0 0;
+}
+
+.left .content .social a {
+    padding: 0 3px;
+}
+
+.left .content .social a span {
+    width: 30px;
+    height: 30px;
+    background: #1a1a1a;
+    text-align: initial;
+    line-height: 40px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.left .content .social a span:hover {
+    background: #f12020;
+}
+
+.left .content p {
+    text-align: inherit;
+}
+
+.content .content .social .fas {
+    font-size: 23px;
+    background: #1a1a1a;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.center .content .fas:hover {
+    background: #f12020;
+}
+
+.center .content .text {
+    font-size: 17px;
+    font-weight: 500;
+    padding-left: 10px;
+}
+
+.center .content .social {
+    margin: 1px 5;
+}
+
+.center .content .place {
+    margin: 10px 0;
+}
+
+.center .content .msg {
+    margin-top: 10px;
+}
+
+.right form input,
+.right form textarea {
+    width: 100%;
+    font: size 17px;
+    background: #151515;
+    padding: 10px;
+    border: 1px solid #222222;
+}
+
+.right form input {
+    height: 35px;
+}
+
+.right form input:focus,
+.right form textarea:focus {
+    outline-color: #3498db;
+}
+
+.right form .text {
+    font: size 17px;
+    margin-bottom: 2px;
+    color: #656565;
+}
+
+.right form .btn {
+    margin-top: 10px;
+}
+
+.right form .btn button {
+    height: 40px;
+    width: 100%;
+    background-color: rgb(201, 181, 6);
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.right form .btn button:hover {
+    background: #000;
+    padding: 5px;
+    font-size: 15px;
+    background: #151515;
+}
+
+.bottom .center span {
+    color: #656565;
+}
+
+.bottom .center a {
+    color: #f12020;
+    text-decoration: none;
+}
+
+.bottom .center a:hover {
+
+    color: #f12020;
+    text-decoration: underline;
+}
+
+.dev1 a:hover {
+    background-color: white;
+}
+
+/*CELL PHONE*/
+@media (min-width: 390px){
+
+    header {
+        width: 100vw;
+        height: 10vh;
+    }
+
+} 

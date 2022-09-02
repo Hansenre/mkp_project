@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Goldman", serif;
+}
+
+body {
+    padding: 0px;
+    background-color: #ffff;
+    min-height: 100vh;
+    align-content: center;
+}
+
+div {
+    display: inline-block;
+}
+
+.final {
+    width: 300px;
+    margin: auto auto;
+    text-align: center;
+    margin-left: 40px;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.container {
+    max-width: 1440px;
+    height: auto;
+    background-color: rgba(52, 50, 50, 0.87);
+    padding: 10px;
+    margin: 10px auto auto;
+    border-radius: 20px;
+    display: flex;
+    position: absolute;
+    box-shadow: 0 0 20px rgba(0, 0, 2, 2, 0.281);
+}
+
+.container .img {
+    border-style: double;
+    display: block;
+    height: auto;
+    text-align: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 40px;
+    background-color:rgba(52, 50, 50, 1);
+    border-style: solid;
+    border-radius: 20px;
+    border-color: #dcc600;
+}
+
+.container .img p {
+    display: flex;
+    height: 200px;
+    margin: auto;
+    text-align: center;
+    color: green;
+    justify-content: center;
+    padding: 50px;
+    font-size: 18px;
+    font-weight: bolder;
+    text-shadow: -1px -1px 0px #FFF, -1px 1px 0px #FFF, 1px -1px 0px #FFF, 1px 0px 0px #FFF;
+}
+
+.container form {
+    border-style: solid;
+    border-color: #dcc600;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.container .form h1 {
+    padding: 5px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #dcc600;
+    font-size: 30px;
+    text-align: center;
+    align-items: center;
+    font: bold;
+    color: #ffff;
+    margin: 10px;
+    text-shadow: -1px -1px 0px rgb(3, 61, 8), 1px 1px 0px rgb(2, 29, 7), 1px 2px 5px green, 1px 0px 0px #FFF;
+}
+
+.container .form p {
+    margin-top: 5px;
+    padding: 10px;
+    color: white
+}
+
+.container .form label {
+    display: flex;
+    font-size: 13px;
+    line-height: 12px;
+    color: white
+}
+
+.container .form input {
+    display: flex;
+    flex-wrap: wrap;
+    border: none;
+    background-color: #fff;
+    margin-bottom: 10px;
+    margin: 10px 10px;
+    padding: 6px 10px;
+    color: black;
+    border-radius: 30px;
+}
+
+
+.container .form select {
+    display: block;
+    margin: 10px 10px;
+    padding: 6px 10px;
+    background-color: #fff;
+    text-align: justify;
+    border: none;
+    font-size: 13px;
+    color: black;
+    border-radius: 30px;
+}
+
+.dataNascimento {
+    display: block;
+    width: 70%;
+    font-size: 12px;
+}
+
+
+.container .form input:hover {
+    background-color: gainsboro;
+}
+
+.container .form form input:focus-visible {
+    outline: 3px solid green;
+}
+
+.container .form form input::placeholder {
+    color: black;
+    text-align: left;
+    font-size: 13px;
+    font-style: italic;
+    padding: 5px;
+}
+
+.container .form form input[type="submit"] {
+    background-color:rgba(52, 50, 50, 1);
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+    padding: 10px;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    transition: 0.9s;
+}
+
+.container .form form input[type="submit"]:hover {
+    background-color: green;
+}
+
+
+.container .form a {
+    text-transform: uppercase;
+    color: green;
+    text-align: center;
+}
+
+@media (max-width:800px) {
+    .container .img {
+        display: none;
+    }
+
+    .container .form {
+        width: 100%;
+    }
+}

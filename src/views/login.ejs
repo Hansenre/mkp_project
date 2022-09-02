@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="shortcut icon" href="./img/NewLogo.ico" type="image/x-icon">
+    <title>login</title>
+</head>
+
+<body>
+
+    <div class="container-f">
+        <div class="img">
+            <img src="./img/logoForm novo.webp"
+                alt="Logo do MPK, contendo as cores azul e amarelo com desenho de carrinho de compra, cartoes de compra e localização">
+
+            <div>
+                <p>BEM VINDO!</p>
+                <p>Aproveite as ofertas do site e ajude o Comérco Local.</p>
+            </div>
+        </div>
+
+        <div class="form">
+            <h1>Entrar no MPK</h1>
+
+            <form action="/auth/login" method="post"> 
+
+                <div>
+                    <input type="email" placeholder="E-mail" required>
+                </div>
+
+
+                <div>
+                    <input type="password" placeholder="Senha" required>
+                </div>
+
+                <div>
+                    <p><a href="#">Esqueceu sua senha?</a></p>
+                </div>
+
+                <div>
+                    <input type="submit" value="Entrar">
+                </div>
+
+                <div>
+                    <p>Ainda não é cadastrado?
+                        <a href="/users/register">CRIAR CONTA</a>
+                    </p>
+                </div>
+
+                <div>
+                    <a href="/">Voltar</a>
+                </div>
+            </form>
+        </div>
+
+
+</body>
+
+</html>

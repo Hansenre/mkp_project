@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="./img/NewLogo.ico" type="image/x-icon">
+    <title>MKP - Parceiros</title>
+    <link rel="stylesheet" href="./css/parceiros.css">
+    <link rel="stylesheet" href="./css/busca-estabelecimentos.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <script src="https://kit.fontawesome.com/610deb5134.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <%- include('partials/header') %>
+    
+
+    <section class="barralink">
+        <nav id="hamburguer">
+            <input type="checkbox" id="check">
+            <label for="check">
+                <img src="img/menuhamb az.png" alt="menu hamburguer" style="cursor: pointer;" />
+            </label>
+            <span>Departamentos</span>
+
+            <div class="submenu-hamb">
+                <ul>
+                    <li><a href="#">Eletroeletrônicos</a></li>
+                    <li><a href="#">Utilidades do Lar</a></li>
+                    <li><a href="#">Moda</a></li>
+                    <li><a href="#">Farmácia</a></li>
+                    <li><a href="#">Construção</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <nav class="navbar">
+            <a class="navbar-item2" href="./estabelecimentos.html"><img src="img/loja-online.png" />Estabelecimentos</a>
+            <a class="navbar-item3" href="#"><img src="img/carrinho-de-compras2.png" />Minhas Compras</a>
+            <a class="navbar-item4" href="#"><img src="img/ofertaaz.png" />Ofertas</a>
+            <a class="navbar-item5" href="#"><img src="img/trofeuaz.png" />Destaques do Mês</a>
+            <a class="navbar-item6" href="#"><img src="img/parceirocolor.png" />Parceiros</a>
+            <a class="navbar-item7" href="#"><img src="img/compras-online.png" />Venda no MPK</a>
+        </nav>
+    </section>
+
+    <main>
+        <section id="buscar">
+            <div id="divBusca">
+                <img src="./img/search.png" id="btnBusca" alt="Lupa de buscar" />
+                <input type="text" id="txtBusca" placeholder="| Ex: marcineiro..." />
+            </div>
+            <div id="divBotao">
+                <button>BUSCAR</button>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+                <section class=" todos-parceiros">
+            <div class="info-parceiro">
+                <a href="./parceiros/detalheParceiro">
+                    <img src="./img/parceiros>"
+                        alt="Icone de homen de capacete com duas ferramentas cruzadas na frente">                   
+                        <div class="info-texto">
+                        <p>Seja um Profissional</p>
+                        <p>Parceiro</p>
+                        <p>clique aqui e saíba mais:</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <%- include('partials/footer') %>
+</body>
+
+</html>

@@ -1,0 +1,166 @@
+<%- include('partials/head') %>
+    <body>
+        <%- include('partials/header') %>
+        <main>
+            <section class="carrossel">
+                <div id="carrossel">
+
+                    <div class="slider">
+                        <!-- Radio Buttons -->
+                        <input type="radio" name="proxima" id="radio1">
+                        <input type="radio" name="proxima" id="radio2">
+                        <input type="radio" name="proxima" id="radio3">
+                        <input type="radio" name="proxima" id="radio4">
+                        <!-- FIM Radio Buttons -->
+
+                        <!-- Slides dos Destaques -->
+                        <div class="primeiroSlide">
+                            <img src="./img/destaque - 1.jpg" alt="Imagem destaque ou oferta 1">
+                        </div>
+                        <div class="slide">
+                            <img src="./img/destaque - 2.jpg" alt="Imagem destaque ou oferta 2">
+                        </div>
+                        <div class="slide">
+                            <img src="./img/destaque - 3.jpg" alt="Imagem destaque ou oferta 3">
+                        </div>
+                        <div class="slide">
+                            <img src="./img/destaque - 4.jpg" alt="Imagem destaque ou oferta 4">
+                        </div>
+                        <!-- FIM Slides dos Destaques -->
+
+                        <!-- Navigation Auto - Imagens passando de forma Automática -->
+                        <div class="navigation-auto">
+                            <div class="destaque1"></div>
+                            <div class="destaque2"></div>
+                            <div class="destaque3"></div>
+                            <div class="destaque4"></div>
+                        </div>
+                        <!-- FIM Navigation Auto -->
+                    </div>
+
+                </div>
+
+                <!-- Navigation Manual - Imagens passando de forma Manual -->
+                <div class="navigation-manual">
+                    <label for="radio1" class="destaque-manual"></label>
+                    <label for="radio2" class="destaque-manual"></label>
+                    <label for="radio3" class="destaque-manual"></label>
+                    <label for="radio4" class="destaque-manual"></label>
+                </div>
+                <!-- FIM Navigation Manual -->
+
+            </section>
+
+            <section id="lojas-ouro">
+                <div class="card">
+                    <a href="/estabelecimentos.html">
+                        <img src="./img/armazem.png" alt="Armazém antigo de bairro">
+                        <div class="container">
+                            <p>
+                                Armazém do seu Zé - Vendia para seu pai e agora para você
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="/estabelecimentos.html">
+                        <img src="./img/barbearia.png" alt="Maquina de cabelo, texoura e pente">
+                        <div class="container">
+                            <p>
+                                Barbearia - barba, cabelo e bigode
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="/estabelecimentos.html">
+                        <img src="./img/eletronicos.png" alt="Alguns eletrônicos, tv, smartphone, smartwatch">
+                        <div class="container">
+                            <p>
+                                Pronto socorro do seu smartphone
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="/estabelecimentos.html">
+                        <img src="./img/farmacia.png" alt="Um homen comprando remedio na fármacia">
+                        <div class="container">
+                            <p>
+                                Fármacia do Ailton - desde 1920
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="/estabelecimentos.html">
+                        <img src="./img/hortalica.png" alt="Cesta cheia de hortalícia">
+                        <div class="container">
+                            <p>
+                                Horta Familiar - Direto do campo para sua casa
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="/estabelecimentos.html">
+                        <img src="./img/materiais-construcao.png"
+                            alt="Pequeno carrinho de supermercado cheio de ferramentas de construção civil">
+                        <div class="container">
+                            <p>
+                                Constroí Lar - Vendendo sonhos antes desse bairro ser cidade
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="/estabelecimentos.html">
+                        <img src="./img/pet-shop.png" alt="Um desenho de um cachorrinho e um gatinho">
+                        <div class="container">
+                            <p>
+                                Happy Pet - Deixando seu companheirinho sempre bem cuidado
+                            </p>
+                        </div>
+                    </a>
+                </div>
+
+            </section>
+
+            <section id="localidades-mkp">
+                <div class="mkp-local">
+                    <h2>
+                        <a
+                            href="https://www.google.com.br/maps/place/Belo+Horizonte,+MG/@-19.9025411,-44.0342617,33275m/data=!3m2!1e3!4b1!4m5!3m4!1s0xa690cacacf2c33:0x5b35795e3ad23997!8m2!3d-19.919052!4d-43.9386685?hl=pt-BR">
+                            Belo Horizonte -
+                        </a>
+                    </h2>
+                </div>
+                <div class="mkp-local">
+                    <h2>
+                        <a
+                            href="https://www.google.com.br/maps/place/Cachoeiro+de+Itapemirim,+ES/@-20.852055,-41.1750781,16536m/data=!3m2!1e3!4b1!4m5!3m4!1s0xb95d3d7ef7ecb9:0xa68aadb2a822a95!8m2!3d-20.8517991!4d-41.1148627?hl=pt-BR">
+                            Cachoeiro de Itapemirim -
+                        </a>
+                    </h2>
+                </div>
+                <div class="mkp-local">
+                    <h2>
+                        <a
+                            href="https://www.google.com.br/maps/place/Ilh%C3%A9us,+BA/@-14.7923667,-39.0907264,17108m/data=!3m2!1e3!4b1!4m5!3m4!1s0x7390a3f7b1d2a77:0xfc575920401943ea!8m2!3d-14.7981287!4d-39.0346984?hl=pt-BR">
+                            Ilhéus -
+                        </a>
+                    </h2>
+                </div>
+                <div class="mkp-local">
+                    <a
+                        href="https://www.google.com.br/maps/place/S%C3%A3o+Paulo,+SP/@-23.6815315,-46.8754829,129636m/data=!3m2!1e3!4b1!4m5!3m4!1s0x94ce448183a461d1:0x9ba94b08ff335bae!8m2!3d-23.5557714!4d-46.6395571?hl=pt-BR">
+                        <h2>São Paulo</h2>
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <script src="./js/carrossel.js"></script>
+        <%- include('partials/footer') %>
+    </body>
+</html>

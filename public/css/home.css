@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+    --blackColor: #000;
+    --whiteColor:#fff;
+    --yellowColor: #ffe600;
+    --ligthBlueColor: rgb(132, 132, 247);
+    --blueColor: blue;
+    --grayColor: #B0A9A9;
+    --darkColor: #343232;
+}
+
+body {
+  background-color: var(--yellowColor);
+  font-family: 'Goldman', cursive;
+}
+
+
+header .search-box{
+    background-color: var(--whiteColor);
+    transition: 0.8s;
+}
+
+header .search-box:hover{
+  border: 1px solid var(--blueColor);
+  transition: 0.8s;
+}
+
+header .dp-menu{
+  transition: 0.8s;
+}
+
+header .dp-menu ul li:hover,
+header .dp-menu ul li a:hover{
+    background-color: var(--blueColor);
+    color: var(--whiteColor);
+    border-radius: 6px;
+    transition: 0.5s;
+}
+
+
+main {
+  max-width: 1440px;
+  margin: auto;
+}
+
+
+main{
+  width: 100vw;
+  height: 80vh;
+}
+
+section#lojas-ouro {
+  margin: 10px 2px;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  margin: 10px;
+  max-width: 180px;
+  background-color: var(--yellowColor)
+}
+
+.card:hover {
+  background-color:var(--ligthBlueColor);
+  height: auto;
+}
+
+.card img {
+  width: 100%;
+  height: 90px;
+  margin: auto;
+}
+
+.container p {
+  margin: auto;
+  text-align: center;
+  font-size: 15px;
+  color: #2c2b2b;
+}
+
+#localidades-mkp {
+  background-color: var(--grayColor);
+  color: var(--dark);
+  font-style: italic;
+  max-width: 1440px;
+  height: 50px;
+  margin: auto;
+  padding: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#localidades-mkp .mkp-local {
+  padding: 0 2px;
+}
+
+.mpk-local:hover {
+  color: var(--blueColor);
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: var(--grayColor);
+}
+
+a:visited {
+  color: var(--grayColor);
+}
+
+
+/*CORROSSEL*/
+section.carrossel {
+  margin: auto;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+#carrossel {
+  margin: auto;
+  width: 100%;
+  max-width: 1440px;
+  height: 410px;
+  overflow: hidden;
+}
+
+.slider {
+  width: 402%;
+  height: 410px;
+  display: flex;
+}
+
+.slider input {
+  display: none;
+}
+
+.slide {
+  width: 25%;
+  position: relative;
+  transition: 3s;
+}
+
+.navigation-manual {
+  position: absolute;
+  width: 100%;
+  max-width: 1440px;
+  padding: 0;
+  margin: auto auto -380px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.destaque-manual {
+  border: 2px solid gold;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.8s;
+}
+
+.destaque-manual:not(:last-child) {
+  margin-right: 40px;
+}
+
+.destaque-manual:hover {
+  background-color: antiquewhite;
+}
+
+#radio1:checked~.primeiroSlide {
+  margin-left: 0;
+}
+
+#radio2:checked~.primeiroSlide {
+  margin-left: -25%;
+}
+
+#radio3:checked~.primeiroSlide {
+  margin-left: -50%;
+}
+
+#radio4:checked~.primeiroSlide {
+  margin-left: -75%;
+}
+
+.navigation-auto div {
+  border: 2px solid gold;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.navigation-auto {
+  max-width: 1440px;
+  width: 100%;
+  margin: 388px auto;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+}
+
+.navigation-auto div:not(:last-child) {
+  margin-right: 40px;
+}
+
+#radio1:checked~.navigation-auto .destaque1 {
+  background-color: antiquewhite;
+}
+
+#radio2:checked~.navigation-auto .destaque2 {
+  background-color: antiquewhite;
+}
+
+#radio3:checked~.navigation-auto .destaque3 {
+  background-color: antiquewhite;
+}
+
+#radio4:checked~.navigation-auto .destaque4 {
+  background-color: antiquewhite;
+}
+
+/* CSS Responsivo para Tablet e Smartphone Small */
+/* Tablet */
+@media(max-width: 768px) {
+
+  #carrossel {
+      height: 210px;
+  }
+
+  #carrossel img {
+      width: 768px;
+      height: 210px;
+  }
+
+  .navigation-manual {
+      margin: auto auto -180px auto;
+  }
+
+  .navigation-auto {
+      margin: 188px auto;
+  }
+
+}
+
+
+
+/* CSS Responsivo para Tablet e Smartphone pequeno */
+/* Tablet */
+@media(max-width: 768px) {
+
+  section#lojas-ouro {
+    justify-content: center;
+  }
+
+  .card {
+    margin: 5px 5px;
+  }
+}
+
+/* SmartPhones Small */
+@media(max-width: 320px) {
+
+  section#lojas-ouro {
+    justify-content: center;
+  }
+
+  .card {
+    margin: 5px 5px;
+  }
+
+  #localidades-mkp {
+    height: auto;
+    margin: auto;
+    padding: 3px;
+    display: block;
+    text-align: center;
+    font-size: 10px;
+  }
+
+  #carrossel {
+    margin-right: 4px;
+    height: 130px;
+}
+
+#carrossel img {
+    width: 320px;
+    height: 130px;
+}
+
+.navigation-manual {
+    margin: auto auto -100px auto;
+}
+
+.navigation-auto {
+    margin: 108px auto;
+}
+
+}

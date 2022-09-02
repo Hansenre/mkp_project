@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #ffe600;
+  }
+  
+  main {
+    max-width: 1440px;
+    margin: auto;
+  }
+
+  .info-parceiro {
+    width: 260px;
+    height: 60px;
+    margin-left: 520px;
+  }
+
+  .info-texto {
+    text-align: center;
+    line-height: 21px;
+    font-family: 'Goldman', cursive;
+    float: right;
+  }
+  
+  section#parceiros {
+    margin: 10px 0;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .card {
+    margin: 20px;
+    background-color: silver;
+    width: 380px;
+    height: 65px;
+    display: flex;
+    border-radius: 60px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
+  }
+
+  .card:hover {
+    background-color: rgb(248, 251, 65);
+/*     border: solid 5px blue; */
+  }
+
+  .card img {
+    margin: 3px 0 0 12px;
+  }
+
+/*   .card:nth-child(even) {
+    background: rgb(248, 237, 144);
+  } */
+  
+   
+.container {
+    margin: 16px 10px 0;
+    text-align: center;
+    font-style: italic;
+    font-size: 24px;
+    font-weight: 800;
+    font-family: 'Inter', sans-serif;
+    color: rgb(68, 68, 69);
+    display: flex;
+    float: right;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  /* CSS Responsivo para Tablet e Smartphone pequeno */
+  /* Tablet */
+  @media(max-width: 768px) {
+  
+    .card {
+      margin: 10px 40px;
+    }
+
+    .info-parceiro {
+      width: 217px;
+      margin: auto;
+      padding: 0;
+    }
+  
+    .info-texto {
+      font-size: 13px;
+    }
+  }
+  
+  /* SmartPhones Small */
+  @media(max-width: 320px) {
+
+    .info-parceiro {
+      width: 205px;
+      margin: auto;
+    }
+  
+    .info-texto {
+      font-size: 12px;
+      line-height: normal;
+      margin: 5px 0;
+    }
+  
+    .card {
+      margin: 7px;
+      height: 60px;
+    }
+
+    .container {
+      font-size: 18px;
+      display: flex;
+    }
+  
+  }

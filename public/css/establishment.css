@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffe600;
+}
+
+main {
+  max-width: 1440px;
+  margin: auto;
+}
+
+section#estabelecimentos {
+  margin: 10px 0;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  margin: 10px;
+  max-width: 250px;
+  height: 220px;
+  font-family: Ropa Sans, sans-serif;
+}
+
+.card:hover {
+  background-color: rgb(132, 132, 247);
+}
+
+.card img {
+  width: 100%;
+  height: 160px;
+  margin: auto;
+}
+
+.container p {
+  margin: auto;
+  text-align: center;
+  font-size: 15px;
+  color: #2c2b2b;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* CSS Responsivo para Tablet e Smartphone pequeno */
+/* Tablet */
+@media(max-width: 768px) {
+
+  .card {
+    margin: 10px 40px;
+  }
+}
+
+/* SmartPhones Small */
+@media(max-width: 320px) {
+
+  .card {
+    margin: auto;
+  }
+
+}
